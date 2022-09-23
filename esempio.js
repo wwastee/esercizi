@@ -13,4 +13,6 @@ function tabellina(X) {
 
 for(let i = 1; i <= num1; i++){
     tabellina(i);
+    console.log(" ");
 };
+
