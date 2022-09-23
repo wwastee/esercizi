@@ -1,10 +1,18 @@
 const prompt = require('prompt-sync')();
 
-let NumeroImput = prompt("inserisci un numero e ti faccio vedere le tabelline cretino ");
+let num1 = parseInt(prompt('inserisci un numero, cretino: '));
 
-let tabellina = 0
+let risultato = 0;
 
-for(let i=0; i <= NumeroImput; i++){
-    tabellina=tabellina + i
-    console.log(i + ": " + tabellina)
+function tabellina(X) {
+    for(let i = 1; i <= 10; i++) {
+        risultato = i * X;
+        console.log(risultato);
+    };
 };
+
+for(let i = 1; i <= num1; i++){
+    tabellina(i);
+    console.log(" ");
+};
+S
